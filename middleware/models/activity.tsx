@@ -1,6 +1,7 @@
 import mongoose, { Schema, Document } from 'mongoose';
 
 export interface IActivity extends Document {
+  _id: string;
   cardId: mongoose.Schema.Types.ObjectId;
   activity: string;
   createdAt: Date;
